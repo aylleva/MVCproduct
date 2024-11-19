@@ -1,0 +1,93 @@
+﻿@using Productmvc.Models
+@using Productmvc.ViewModels
+
+	
+@model HomeVM
+	
+      <style>
+		  .container{
+			  padding:2px 16px;
+		  }
+		  
+	  </style>
+
+		@foreach(var product in Model.Products)
+		
+		{
+			<div class="card">
+              <img src="@product.Image" alt="Libre">
+			  <div class="container">
+				<h4><b>@product.Name</b></h4>
+				  <p>@product.Description</p>
+				  <p>Price:@product.Price</p>
+				  <p>DiscountPrice:@product.DiscountPrice</p>
+				  <p>Category:@product.Category</p>
+				  <p>Color:@product.Color</p>
+			  </div>
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			@* <table border="1" style="border:solid">
+				<thead>
+					<tr>
+					<th>Image</th>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Price</th>
+					<th>DiscountPrice</th>
+					<th>Category</th>
+					<th>Color</th>
+				</tr>
+
+				</thead>
+				<tbody>
+					<tr>
+					<td><img src="@product.Image"></img></td>
+					<td>@product.Name</td>
+					<td>@product.Description</td>
+					<td>@product.Price</td>
+					<td>@product.DiscountPrice</td>
+					<td>@product.Category</td>
+					<td>@product.Color</td>
+					</tr>
+
+				</tbody>
+			</table> *@
+		}
+
+
+
+	
